@@ -1,7 +1,8 @@
 // _core.scss
 
-@import 'variables';
-@import 'typography';
+
+@import 'styles/variables.scss';
+@import 'styles/typography.scss';
 
 * {
     margin: 0;
@@ -30,25 +31,25 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
-}
 
-.nav-menu li {
-    display: inline;
-}
+    li {
+        display: inline;
 
-.nav-menu a {
-    font-family: $font-bebas;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-decoration: none;
-    color: $text-color;
-    padding: 5px 10px;
-    text-align: center;
-}
+        a {
+            font-family: $font-bebas;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: none;
+            color: $text-color;
+            padding: 5px 10px;
+            text-align: center;
 
-.nav-menu a:hover {
-    color: $hover-color;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
 }
 
 .line {
@@ -68,17 +69,12 @@ header {
     font-family: $font-oswald;
 }
 
-.footer {
-    font-family: $font-oswald;
-    background-color: white;
-}
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: auto;
-}
+
 
 .footer-box {
     width: 100%;
@@ -86,21 +82,20 @@ header {
     border: 1px solid $border-color;
     border-width: 1px 1px 0 0;
     position: relative;
+    &:hover {background: $hover-bg-color;}
 }
 
-.footer-box:nth-child(odd) {
+&:nth-child(odd) {
     background-color: $odd-bg-color;
 }
 
-.footer-box:nth-child(even) {
+&:nth-child(even) {
     background-color: $even-bg-color;
 }
 
-.footer-box:hover {
-    background: $hover-bg-color;
-}
 
-// Медиазапросы
+
+
 @media (max-width: 800px) {
     header {
         flex-direction: column;
@@ -127,4 +122,5 @@ header {
     .footer-container {
         grid-template-columns: 1fr;
     }
+}
 }
