@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="assets/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="common-wrapper">
+        <div class="header">
+          <nav class="header__navigation">
+            <a class="header__link" href="#">Home</a>
+            <a class="header__link" href="#">About</a>
+            <a class="header__link" href="#">Job Listings</a>
+            <a class="header__link" href="#">Companies</a>
+            <a class="header__link" href="#">Workshops/Events</a>
+            <a class="header__link" href="#">Contact</a>
+          </nav>
+          <div>
+            <img class="header__logo" src="./assets/images/Logo.svg" width="100px" height=auto alt="looking">
+          </div>
+        </div>
+      </header>
+      <main class="common-wrapper">
+        <div class="event">
+            <p class="event__title">EVENT</p>
+            <p class="event__description">
+              Join us for an unforgettable experience at Inspire Fest! Whether you're a creative, entrepreneur,
+              or just looking to connect, this event promises a day of inspiration and excitement. Enjoy workshops,
+              guest speakers, live performances, and interactive exhibits, with opportunities to network and spark new ideas.
+              Don’t miss out – see you there!
+            </p>
+            <form class="event__form" action="http://tikva-registration-api.kamitech.co.il/sign-in" method="post">
+                <div class="event__row">
+                  <label class="event__label" for="email">EMAIL</label>
+                  <input class="event__input" type="email" id="email" name="email" placeholder="type email" required />
+                  <label class="event__label" for="password">PASSWORD</label>
+                  <input class="event__input" type="password" id="password" name="password" minlength="8" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" placeholder="type password" required />
+                </div>
+                <button class="event__button" type="submit">SIGN IN</button>
+            </form>
+        </div>
+        <div class="event-registration">
+          <p class="event-registration__title">Event Registration</p>
+          <form class="event-registration__form" action="http://tikva-registration-api.kamitech.co.il/register-event" method="post">
+            <div class="event-registration__columns">
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="full_name">Full Name</label>
+                <input class="event-registration__input" type="text" id="full_name" name="full_name" minlength="2" placeholder="Enter your full name" required />
+                <p class="event-registration__error">name must be at least 2 characters.</p>
+              </div>
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="email">Email Address</label>
+                <input class="event-registration__input" type="email" id="email" name="email" placeholder="Enter your email address" required />
+                <p class="event-registration__error">invalid email</p>
+              </div>
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="phone_number">Phone Number</label>
+                <input class="event-registration__input" type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone number: Eg 067-123-1234" required />
+                <p class="event-registration__error">incorrect phone number</p>
+              </div>
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="guests">Number of Guests</label>
+                <input class="event-registration__input" type="number" id="guests" name="guests" min="1" max="10" placeholder="Number of guests(1-10)"
+                />
+                <p class="event-registration__error">number must be between 1 and 10</p>
+              </div>
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="event_date">Event Date</label>
+                <input class="event-registration__input" type="text" id="event_date" name="event_date" placeholder="Select a date" onfocus="(this.type='date')" onblur="(this.type='text')" required />
+              </div>
+              <div class="event-registration__filed">
+                <label class="event-registration__label" for="time_slot">Preferred Time Slot</label>
+                <input class="event-registration__input" type="text" id="time_slot" name="time_slot" placeholder="Choose a time slot" onfocus="(this.type='time')" onblur="(this.type='text')" required/>
+              </div>
+            </div>
+            <label class="event-registration__label" for="comments">Additional Comments</label>
+            <textarea class="event-registration__textarea" name="comments" id="comments" placeholder="type your comment"></textarea>
+            <button class="event-registration__button" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer common-wrapper">
+        <div class="footer__section">
+          <div class="footer__container footer__container--modified">
+            <p class="footer__title">CONTACT US</p>
+            <ul class="footer__list">
+              <li class="footer__item">Address: 123 Event Street, City, Country</li>
+              <li class="footer__item">Phone: (123) 456-7890</li>
+              <li class="footer__item">Email: contact@eventcompany.com</li>
+              <li class="footer__item">Office Hours: Mon-Fri, 9:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+          <div class="footer__container footer__container--modified">
+            <p class="footer__title">Quick Links</p>
+            <ul class="footer__list">
+              <li class="footer__item">About Us</li>
+              <li class="footer__item">Upcoming Events</li>
+              <li class="footer__item">Blog</li>
+              <li class="footer__item">FAQ</li>
+            </ul>
+          </div>
+          <div class="footer__container footer__container--modified">
+            <p class="footer__title">Legal</p>
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Terms of Service</a></li>
+              <li class="footer__item">Refund Policy</li>
+              <li class="footer__item">Code of Conduct</li>
+            </ul>
+          </div>
+          <div class="footer__container footer__container--modified">
+            <p class="footer__title">Follow Us</p>
+            <ul class="footer__list">
+              <li class="footer__item">Facebook</li>
+              <li class="footer__item">Twitter</li>
+              <li class="footer__item">Instagram</li>
+              <li class="footer__item">LinkedIn</li>
+            </ul>
+          </div>
+          <div class="footer__container">
+            <p class="footer__title">Terms of Service</p>
+            <p class="footer__description">
+              By using our website and registering for events, you agree to abide by our terms
+              and conditions, ensuring a safe and enjoyable experience for all attendees.
+            </p>
+            <span class="icon-Subtract"></span>
+            <span class="icon-facebook"></span>
+            <span class="icon-pinterest-2"></span>
+            <span class="icon-twiter"></span>
+          </div>
+        </div>
+        <p class="footer__underline">Discover Register Experience Repeat.</p>
+      </div>
+    </footer>
+  </body>
+</html>
