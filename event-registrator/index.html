@@ -48,7 +48,7 @@
         <div class="event-registration">
           <p class="event-registration__title">Event Registration</p>
           <form class="event-registration__form" action="http://tikva-registration-api.kamitech.co.il/register-event" method="post">
-            <div class="event-registration__columns">
+            
               <div class="event-registration__filed">
                 <label class="event-registration__label" for="full_name">Full Name</label>
                 <input class="event-registration__input" type="text" id="full_name" name="full_name" minlength="2" placeholder="Enter your full name" required />
@@ -78,12 +78,14 @@
                 <label class="event-registration__label" for="time_slot">Preferred Time Slot</label>
                 <input class="event-registration__input" type="text" id="time_slot" name="time_slot" placeholder="Choose a time slot" onfocus="(this.type='time')" onblur="(this.type='text')" required/>
               </div>
-            </div>
+     
             <label class="event-registration__label" for="comments">Additional Comments</label>
-            <textarea class="event-registration__textarea" name="comments" id="comments" placeholder="type your comment"></textarea>
+            <textarea class="event-registration__textarea event-registration__filed-comments" name="comments" id="comments" placeholder="type your comment"></textarea>
+           
             <button class="event-registration__button" type="submit">SUBMIT</button>
           </form>
         </div>
+
       </main>
     </div>
     <footer>

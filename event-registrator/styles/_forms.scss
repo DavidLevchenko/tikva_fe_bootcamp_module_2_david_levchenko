@@ -1,33 +1,78 @@
 @import './variables';
+
+.common-wrapper {
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 .event {
     flex: 31%;
     margin: 57px 45px;
-    &__title{
+
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+
+    &__title {
         font-size: 21px;
         font-weight: 700;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 16px; 
+        }
     }
-    &__description{
+
+    &__description {
+        width: auto;
         font-size: $main_font_family;
         font-weight: 400;
-        width: 408px;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 14px; 
+            margin-bottom: 10px;
+        }
     }
-    &__form{
+
+    &__form {
         display: flex;
         flex-direction: column;
     }
-    &__row{
+
+    &__row {
         display: flex;
         flex-direction: column;
         width: max-content;
         margin-bottom: 40px;
     }
-    &__label{
+
+    &__label {
         font-size: 18px;
         margin-bottom: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 16px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 14px; 
+        }
     }
-    &__input{
+
+    &__input {
         font-size: $main_font_family;
         height: 46px;
         width: 410px;
@@ -35,16 +80,30 @@
         margin-bottom: 15px;
         border: $border_input;
         border-radius: $border_radius_input;
-        &:invalid:focus{
+
+        &:invalid:focus {
             border: $border_input_invalid;
             outline-style: none;
         }
+
         &:not(:focus):not(:placeholder-shown):invalid {
             border: $border_input_invalid;
             outline-style: none;
         }
+
+        @media (max-width: 768px) {
+            width: 100%; 
+            height: 40px;
+        }
+
+        @media (max-width: 375px) {
+            width: 100%; 
+            height: 35px;
+            font-size: 14px; 
+        }
     }
-    &__button{
+
+    &__button {
         background: $button-bg-color;
         font-size: 24px;
         border: none;
@@ -53,77 +112,165 @@
         margin: 0 auto;
         border-radius: $border_radius_button;
         color: white;
-        &:hover{
+
+        &:hover {
             background-color: $bg_button_active;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%; 
+            height: 50px; 
+            font-size: 18px; 
+        }
+
+        @media (max-width: 375px) {
+            width: 100%; 
+            height: 45px;
+            font-size: 16px; 
         }
     }
 }
-.event-registration{
+
+.event-registration {
     flex: 69%;
     padding-left: 25px;
-    border-left: 1px black;
+    border-left: 1px solid black;
     margin: 35px 0;
-    padding-left: 50px;
-    &__title{
+
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+        border-left: none;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    &__title {
         height: 134px;
         font-size: 64px;
         font-weight: 400;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+            height: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 24px; 
+        }
     }
-    &__form{
-        display: flex;
-        flex-direction: column;
-        width: 784px;
-    }
-    &__columns{
+
+    &__form {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
-        margin-bottom: 20px;
+        justify-content: space-between;
+        gap: 16px;
+        padding-right: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (max-width: 375px) {
+            gap: 8px; 
+        }
     }
-    &__filed{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+
+    &__filed {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        @media (max-width: 375px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
     }
-    &__label{
+
+    &__filed-comments {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    &__label {
         font-size: $main_font_family;
         margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 14px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 12px; 
+        }
     }
-    &__input{
+
+    &__input {
         font-size: $main_font_family;
         border: $border_input;
         border-radius: $border_radius_input;
         padding-left: 15px;
         width: 378px;
         height: 46px;
-        &:invalid:focus{
+
+        &:invalid:focus {
             border: $border_input_invalid;
             outline-style: none;
         }
+
         &:not(:focus):not(:placeholder-shown):invalid {
             border: $border_input_invalid;
             outline-style: none;
         }
-        &:invalid:focus ~ .event-registration__error{
+
+        &:invalid:focus ~ .event-registration__error {
             display: block;
         }
+
         &:not(:focus):not(:placeholder-shown):invalid ~ .event-registration__error {
             display: block;
         }
+
+        @media (max-width: 768px) {
+            width: 100%; 
+        }
+
+        @media (max-width: 375px) {
+            width: 100%; 
+            height: 40px;
+            font-size: 14px; 
+        }
     }
-    &__error{
+
+    &__error {
         font-size: $main_font_family;
         display: none;
         color: red;
     }
-    &__textarea{
+
+    &__textarea {
         border-radius: $border_radius_input;
         border: $border_input;
         padding: 15px;
-        width: 784px;
+        width: 500px;
         height: 143px;
+
+        @media (max-width: 768px) {
+            width: 100%; 
+        }
+
+        @media (max-width: 375px) {
+            width: 100%; 
+            height: 120px; 
+        }
     }
-    &__button{
+
+    &__button {
         background: $button-bg-color;
         border: none;
         margin: 0 auto;
@@ -133,8 +280,19 @@
         font-size: 24px;
         border-radius: $border_radius_button;
         color: white;
-        &:hover{
+
+        &:hover {
             background-color: blue;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 375px) {
+            width: 100%; 
+            height: 50px;
+            font-size: 16px; 
         }
     }
 }

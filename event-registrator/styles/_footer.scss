@@ -1,52 +1,133 @@
 @import './variables';
-.footer{
+
+.footer {
     color: $white;
-    
-    &__section{
+
+    &__section {
         display: flex;
         justify-content: center;
         padding: 25px 0;
         border-bottom: $border_footer;
-        
+
+        @media (max-width: 768px) {
+            padding: 20px 0; 
+        }
+
+        @media (max-width: 375px) {
+            flex-direction: column; 
+            padding: 15px 0; 
+        }
     }
-    &__container{
+
+    &__container {
         margin-right: 35px;
-        &--modified{
+
+        &--modified {
             flex: 30%;
             border-right: $border_footer;
+
+            @media (max-width: 768px) {
+                flex: 50%; 
+            }
+
+            @media (max-width: 375px) {
+                flex: 100%; 
+                border-right: none; 
+            }
         }
-       
     }
-    &__title{
+
+    &__title {
         font-size: $main_font_family;
         margin-bottom: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 18px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 16px; 
+        }
     }
-    &__list{
+
+    &__list {
         font-size: $main_font_family;
         list-style-type: none;
+
+        @media (max-width: 768px) {
+            font-size: 14px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 12px; 
+        }
     }
-    &__item{
+
+    &__item {
         margin-bottom: 9px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 6px; 
+        }
+
+        @media (max-width: 375px) {
+            margin-bottom: 4px; 
+        }
     }
-    &__link{
+
+    &__link {
         color: inherit;
+
+        @media (max-width: 768px) {
+            font-size: 14px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 12px; 
+        }
     }
-    &__description{
+
+    &__description {
         font-size: $main_font_family;
         margin-bottom: 15px;
-    }
-    &__icon{
-    font-size: 30px;
-    margin-right: 15px;
 
-        &:hover:before{
+        @media (max-width: 768px) {
+            font-size: 14px; 
+        }
+
+        @media (max-width: 375px) {
+            font-size: 12px; 
+        }
+    }
+
+    &__icon {
+        font-size: 30px;
+        margin-right: 15px;
+
+        &:hover:before {
             color: red;
         }
-    }
-    &__underline{
-       padding: 10px 0;
-    }
-  
+
+        @media (max-width: 768px) {
+            font-size: 24px; 
+            margin-right: 10px; 
         }
-       
-       
+
+        @media (max-width: 375px) {
+            font-size: 20px; 
+            margin-right: 8px; 
+        }
+    }
+
+    &__underline {
+        padding: 10px 0;
+
+        @media (max-width: 768px) {
+            padding: 8px 0; 
+        }
+
+        @media (max-width: 375px) {
+            padding: 6px 0; 
+        }
+    }
+}
