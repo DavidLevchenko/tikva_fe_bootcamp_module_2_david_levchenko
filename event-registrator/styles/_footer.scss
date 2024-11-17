@@ -100,11 +100,13 @@
         }
     }
 
+    //commited by Liubomyr
     &__icon {
         font-size: 30px;
         margin-right: 15px;
+        color: #daa640;
 
-        &:hover:before {
+        &:hover {
             color: red;
         }
 

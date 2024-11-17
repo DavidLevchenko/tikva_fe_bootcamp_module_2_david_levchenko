@@ -1,8 +1,20 @@
 @import './variables';
 
-header {
-    width: 100%; 
 
+//commited by Liubomyr
+header {
+    width: 100%;
+    //rulles for mobile
+
+    @media screen and (min-width: 768px) {
+        // rulles for tablet
+    }
+
+    @media screen and  (min-width: 1440){
+        // rulles for desktop
+    }
+
+    //TODO: the next section should be deleted
     @media (max-width: 768px) {
         display: flex;
         flex-direction: row;
@@ -11,6 +23,7 @@ header {
         margin-left: 0; 
     }
 
+    //TODO: the next section should be deleted
     @media (max-width: 375px) {
         display: flex;
         flex-direction: column; 

@@ -25,19 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*commited by Liubomyr*/
 .icon-facebook:before {
   content: "\e900";
-  color: #daa640;
 }
 .icon-pinterest-2:before {
   content: "\e901";
-  color: #daa640;
 }
 .icon-Subtract:before {
   content: "\e902";
-  color: #daa640;
 }
 .icon-twiter:before {
   content: "\e903";
-  color: #daa640;
 }
