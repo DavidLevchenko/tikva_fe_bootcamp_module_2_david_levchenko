@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../assets/fonts/icomoon/icomoon.eot?7fjdmz');
+    src:  url('../assets/fonts/icomoon/icomoon.eot?7fjdmz#iefix') format('embedded-opentype'),
+      url('../assets/fonts/icomoon/icomoon.ttf?7fjdmz') format('truetype'),
+      url('../assets/fonts/icomoon/icomoon.woff?7fjdmz') format('woff'),
+      url('../assets/fonts/icomoon/icomoon.svg?7fjdmz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\e901";
+    color: #daa640;
+  }
+  .icon-pinterest-2:before {
+    content: "\e902";
+    color: #daa640;
+  }
+  .icon-Subtract:before {
+    content: "\e903";
+    color: #daa640;
+  }
+  .icon-twiter:before {
+    content: "\e904";
+    color: #daa640;
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-paragraph-justify:before {
+    content: "\ea7a";
+  }
+  
