@@ -1,0 +1,128 @@
+@import './variables';
+@import './typography';
+@import './mixins';
+.main{
+    margin: 0 16px 0 16px;
+
+   
+
+    &__content{
+       
+}
+    &__title{
+        margin-top: 30px;
+        font-family: $font-poppins;
+        font-size: 86px;
+        font-weight: 800;
+        line-height: 63.64px;
+        letter-spacing: -2px;
+        text-align: left;
+        color: white;
+ }
+    &__subtitle{
+        margin-top: 49px;
+        font-family: $font-roboto;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: left;
+        color: rgba(7, 196, 255, 1);
+    }
+    &__icon-google-box{   
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            width: 100%; 
+            height: auto; 
+    }
+    &__icon-google{
+        display: block; 
+        width: 100%; 
+        max-width: 327px; 
+        height: auto; 
+    }
+    &__ip{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px 40px 20px;
+        font-family: $font-inter;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        border: 2px solid rgba(255, 115, 15, 1);
+        border-radius: 25px;
+
+    }
+    &__ip-text{
+       
+        
+    }
+    &__ip-input-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(12, 22, 35, 1);
+        border: none;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        border-radius: 30px; 
+        padding: 10px 15px;
+        width: 100%;
+        height: auto;
+        max-width: 267px;
+        height: 50px;
+        font-weight: 500;
+        box-sizing: border-box;
+    }   
+    &__ip-icon-wrapper{
+        color:$field-color; 
+        font-size: 16px; 
+        margin-right: 10px; 
+    }
+   
+    &__wrapper-text {
+        font-family: $font-inter;
+        color: $field-color; 
+        font-size: 17px;
+        font-weight: 500;
+       
+
+
+    }
+    &__features{
+       margin-top: 40px;
+       display: flex;
+       flex-direction: column;
+       gap: 40px; 
+       font-family:$font-roboto;
+    }
+    &__feature-title-box{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 20px
+    }
+    &__feature{
+        
+    }
+    &__wrapper-icon{
+
+    }
+    &__feature-title{
+        color: $title-color;
+        size: 19px;
+
+    }
+    &__feature-content{
+        color:rgba(223, 240, 251, 1);
+
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+
+text-align: left;
+
+
+    }
+    
+}

@@ -1,0 +1,42 @@
+@import './variables';
+@import './typography';
+@import './mixins';
+.header{
+   font-family: $font-roboto;
+   color: $content-color;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin: 16px 16px 30px 16px;
+
+   &__right-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap:10px;
+    }
+    
+    &__logo{
+        width: 40px;
+        height: 44px;
+    }
+    &__title{
+        font-size: 19.16px;
+        font-weight: 700;
+    }
+    &__icon-menu{
+        font-size: 40px;
+    }
+    &__nav{
+        display: none;
+    }
+    &__nav-list{
+      
+    }
+    &__nav-link{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
