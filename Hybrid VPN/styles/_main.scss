@@ -1,16 +1,17 @@
 @import './variables';
 @import './typography';
 @import './mixins';
-.main{
-    margin: 0 16px 0 16px;
 
-   
+.main{
+    margin: 0 20px 0 20px;
+    position: relative;
+
 
     &__content{
        
 }
     &__title{
-        margin-top: 30px;
+        margin-top: 60px;
         font-family: $font-poppins;
         font-size: 86px;
         font-weight: 800;
@@ -42,6 +43,7 @@
         height: auto; 
     }
     &__ip{
+        margin-top: -50px;
         display: flex;
         flex-direction: column;
         gap: 20px;
