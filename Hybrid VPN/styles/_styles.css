@@ -1,73 +1,73 @@
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 .header {
@@ -83,9 +83,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0px 20px 25px 20px;
   padding-top: 15px;
 }
@@ -111,53 +111,53 @@
 }
 .header__title {
   font-size: 19.16px;
-  font-weight: 700;
 }
 .header__icon-menu {
-  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  color: white;
 }
 .header__nav {
   display: none;
 }
 .header__nav-link {
   font-size: 14px;
-  font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 .section {
@@ -177,7 +177,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  margin-top: -800px;
+  top: -800px;
 }
 
 .divise {
@@ -190,7 +190,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  margin-top: -550px;
+  top: -550px;
   left: 150px;
 }
 
@@ -204,37 +204,37 @@
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../assets/fonts/roboto-old/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/roboto-old/Roboto-Regular.woff") format("woff"), url("../assets/fonts/roboto-old/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
   src: url("../assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../assets/fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 .main {
@@ -245,7 +245,6 @@
   margin-top: 60px;
   font-family: "Poppins", sans-serif;
   font-size: 86px;
-  font-weight: 800;
   line-height: 63.64px;
   letter-spacing: -2px;
   text-align: left;
@@ -255,7 +254,6 @@
   margin-top: 49px;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  font-weight: 900;
   line-height: 28px;
   text-align: left;
   color: rgb(7, 196, 255);
@@ -293,7 +291,6 @@
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 17px;
-  font-weight: 500;
   border: 2px solid rgb(255, 115, 15);
   border-radius: 25px;
 }
@@ -315,7 +312,6 @@
   height: auto;
   max-width: 267px;
   height: 50px;
-  font-weight: 500;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -353,6 +349,9 @@
   gap: 15px;
   margin-bottom: 20px;
 }
+.main__feature-icon {
+  color: rgb(7, 196, 255);
+}
 .main__feature-title {
   color: rgb(7, 196, 255);
   size: 19px;
@@ -360,7 +359,6 @@
 .main__feature-content {
   color: rgb(223, 240, 251);
   font-size: 15px;
-  font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
