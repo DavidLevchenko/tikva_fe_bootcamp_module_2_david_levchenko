@@ -2,127 +2,195 @@
 @import './typography';
 @import './mixins';
 
-.main{
-    margin: 0 20px 0 20px;
+.main {
+    margin: 0 20px;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+        margin: 10px 40px 25px 40px;
+    }
+    @media screen and (min-width: 1440px) {
+        margin: 10px 120px 25px 120px;
+    }
 
-    &__content{
-       
-}
-    &__title{
-        margin-top: 60px;
+    &__title {
+        margin-top: 50px;
         font-family: $font-poppins;
         font-size: 86px;
         line-height: 63.64px;
         letter-spacing: -2px;
         text-align: left;
         color: white;
- }
-    &__subtitle{
+        @media screen and (min-width: 1440px) {
+        margin-top: 150px;
+        font-family: $font-poppins;
+        font-size: 131px;
+        line-height: 0.8;
+        }
+    
+    }
+
+    &__subtitle {
         margin-top: 49px;
         font-family: $font-roboto;
         font-size: 40px;
         line-height: 28px;
         text-align: left;
         color: rgba(7, 196, 255, 1);
+        @media screen and (min-width: 1440px) {
+            margin-top: 80px;
+            font-size: 62px;
+            line-height: 0.8;
+        }
     }
-    &__icon-google-box{   
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-            width: 100%; 
-            height: auto; 
+
+    &__google-conteiner {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1440px) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: end;
+            margin-top: -317px;
+            margin-bottom: 100px;
+        }
     }
-    &__icon-google{
-        display: block; 
-        width: 100%; 
-        max-width: 327px; 
-        height: auto; 
+
+   
+
+    &__icon-google {
+        display: block;
+        width: 327px;
+        aspect-ratio: 317 / 261;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 50px;
+            max-width: 242px;
+        }
+        @media screen and (min-width: 1440px) {
+            margin-top: 0;
+        }
     }
-    &__ip{
+
+    &__ip {
         margin-top: -50px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px;
         font-family: $font-inter;
         color: white;
         font-size: 17px;
         border: 2px solid rgba(255, 115, 15, 1);
         border-radius: 25px;
 
+        @media screen and (min-width: 768px) {
+            margin-top: -200px;
+            border: none;
+            max-width: 200px;
+        }
+        @media screen and (min-width: 1440px) {
+            width: 242px;
+        }
     }
-    &__ip-text{
-       
+
+    &__ip-text {
         
     }
-    &__ip-input-wrapper{
+
+    &__ip-input-wrapper {
         display: flex;
         align-items: center;
         gap: 8px;
         background: rgba(12, 22, 35, 1);
         border: none;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        border-radius: 30px; 
+        border-radius: 30px;
         padding: 10px 15px;
         width: 100%;
-        height: auto;
         max-width: 267px;
         height: 50px;
         box-sizing: border-box;
-    }   
-    &__ip-icon-wrapper{
-        color:$field-color; 
-        font-size: 16px; 
-        margin-right: 10px; 
     }
-   
+
+    &__ip-icon-wrapper {
+        .icon {
+            width: 16px;
+            height: 13px;
+        }
+    }
+
     &__wrapper-text {
         font-family: $font-inter;
-        color: $field-color; 
+        color: $field-color;
         font-size: 17px;
         font-weight: 500;
-       
-
-
     }
-    &__features{
-       margin-top: 40px;
-       display: flex;
-       flex-direction: column;
-       gap: 40px; 
-       font-family:$font-roboto;
+
+    &__features {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-family: $font-roboto;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1440px) {
+            gap: 140px;
+        }
+    
     }
-    &__feature-title-box{
+   
+&__feature{
+    @media screen and (min-width: 768px) {
+        width: 33.33%;
+    }
+}
+    &__feature-title-box {
         display: flex;
         flex-direction: row;
         gap: 15px;
-        margin-bottom: 20px
-    }
-    &__feature{
-        
-    }
-    &__wrapper-icon{
+        margin-bottom: 20px;
 
+        @media screen and (min-width: 768px) {
+            flex-direction: column;
+            
+        }
     }
-    &__feature-icon{
+
+    &__wrapper-icon {
+     
+    }
+
+    &__feature-icon {
+        width: 60px;
+        aspect-ratio: 1 / 1;
+        @media screen and (min-width: 1440px) {
+        width: 70px;
+        aspect-ratio: 1 / 1;
+        }
+    
+    }
+
+    &__feature-title {
         color: $title-color;
-
+        font-size: 19px;
+        @media screen and (min-width: 1440px) {
+            font-size: 24px;
+            }
     }
-    &__feature-title{
-        color: $title-color;
-        size: 19px;
 
-    }
-    &__feature-content{
-        color:rgba(223, 240, 251, 1);
-
+    &__feature-content {
+        color: rgba(223, 240, 251, 1);
         font-size: 15px;
         line-height: 24px;
         text-align: left;
-
-
     }
-    
 }

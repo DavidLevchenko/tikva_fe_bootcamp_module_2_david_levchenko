@@ -7,9 +7,16 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-items: flex-start;
+   align-items: center;
    margin: 0px 20px 25px 20px;
    padding-top: 15px;
+   @media screen and (min-width: 768px){
+    margin: 10px 40px 25px 40px;
+}
+@media screen and (min-width: 1440px) {
+    margin: 10px 120px 25px 120px;
+}
+
 
    &__right-part{
     display: flex;
@@ -25,19 +32,42 @@
     }
     &__title{
         font-size: 19.16px;
+        @media screen and (min-width: 1440px) {
+            font-size: 22px;
+        }
     }
     &__icon-menu{
         width: 40px;
         height: 40px;
         color: white;
+        @media screen and (min-width: 768px){
+            display: none;
+        }
     }
     &__nav{
         display: none;
+        @media screen and (min-width: 768px){
+            display: block;
+          
+           
+            
+        }
     }
     &__nav-list{
-      
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        
+    
     }
+   
     &__nav-link{
         font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+    &__nav-link:hover{
+        color: darkblue;
     }
 }

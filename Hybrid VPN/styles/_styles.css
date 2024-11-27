@@ -7,7 +7,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -25,7 +25,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -43,7 +43,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -61,7 +61,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -83,11 +83,21 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px 20px 25px 20px;
   padding-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 10px 40px 25px 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    margin: 10px 120px 25px 120px;
+  }
 }
 .header__right-part {
   display: -webkit-box;
@@ -112,16 +122,47 @@
 .header__title {
   font-size: 19.16px;
 }
+@media screen and (min-width: 1440px) {
+  .header__title {
+    font-size: 22px;
+  }
+}
 .header__icon-menu {
   width: 40px;
   height: 40px;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .header__icon-menu {
+    display: none;
+  }
+}
 .header__nav {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
+}
+.header__nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 80px;
+}
 .header__nav-link {
   font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.header__nav-link:hover {
+  color: darkblue;
 }
 
 @font-face {
@@ -133,7 +174,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -151,7 +192,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -164,34 +205,42 @@
   background-color: #031C3C;
   position: relative;
   width: 100%;
+  height: auto;
   z-index: 0;
+  overflow: hidden;
 }
 
 .conteiner {
-  background-image: url(../assets/images/BG.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: -800px;
-}
-
-.divise {
-  background-image: url(../assets/images/Divise.svg);
+  background-image: url("../assets/images/main-bg.png");
+  overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 0 auto;
+  top: 170px;
+  left: 450px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 1000px;
+  aspect-ratio: 1440/1060;
   z-index: -1;
-  top: -550px;
-  left: 150px;
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    top: 170px;
+    left: 580px;
+    margin: 10px 80px 25px 80px;
+    width: 2000px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .conteiner {
+    top: 270px;
+    left: 880px;
+    margin: 10px 80px 25px 80px;
+    width: 2200px;
+  }
 }
 
 * {
@@ -210,7 +259,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -228,7 +277,7 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"), url("../assets/fonts/Inter/Inter_18pt-Regular.woff") format("woff"), url("../assets/fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -238,17 +287,35 @@
   font-style: normal;
 }
 .main {
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .main {
+    margin: 10px 40px 25px 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 10px 120px 25px 120px;
+  }
+}
 .main__title {
-  margin-top: 60px;
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 86px;
   line-height: 63.64px;
   letter-spacing: -2px;
   text-align: left;
   color: white;
+}
+@media screen and (min-width: 1440px) {
+  .main__title {
+    margin-top: 150px;
+    font-family: "Poppins", sans-serif;
+    font-size: 131px;
+    line-height: 0.8;
+  }
 }
 .main__subtitle {
   margin-top: 49px;
@@ -258,24 +325,64 @@
   text-align: left;
   color: rgb(7, 196, 255);
 }
-.main__icon-google-box {
+@media screen and (min-width: 1440px) {
+  .main__subtitle {
+    margin-top: 80px;
+    font-size: 62px;
+    line-height: 0.8;
+  }
+}
+.main__google-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main__google-conteiner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__google-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-top: -317px;
+    margin-bottom: 100px;
+  }
 }
 .main__icon-google {
   display: block;
-  width: 100%;
-  max-width: 327px;
-  height: auto;
+  width: 327px;
+  aspect-ratio: 317/261;
+}
+@media screen and (min-width: 768px) {
+  .main__icon-google {
+    margin-top: 50px;
+    max-width: 242px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__icon-google {
+    margin-top: 0;
+  }
 }
 .main__ip {
   margin-top: -50px;
@@ -287,12 +394,24 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px;
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 17px;
   border: 2px solid rgb(255, 115, 15);
   border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .main__ip {
+    margin-top: -200px;
+    border: none;
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__ip {
+    width: 242px;
+  }
 }
 .main__ip-input-wrapper {
   display: -webkit-box;
@@ -309,16 +428,14 @@
   border-radius: 30px;
   padding: 10px 15px;
   width: 100%;
-  height: auto;
   max-width: 267px;
   height: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.main__ip-icon-wrapper {
-  color: rgb(255, 115, 15);
-  font-size: 16px;
-  margin-right: 10px;
+.main__ip-icon-wrapper .icon {
+  width: 16px;
+  height: 13px;
 }
 .main__wrapper-text {
   font-family: "Inter", sans-serif;
@@ -338,6 +455,24 @@
   gap: 40px;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (min-width: 768px) {
+  .main__features {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__features {
+    gap: 140px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__feature {
+    width: 33.33%;
+  }
+}
 .main__feature-title-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,12 +484,32 @@
   gap: 15px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .main__feature-title-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .main__feature-icon {
-  color: rgb(7, 196, 255);
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 1440px) {
+  .main__feature-icon {
+    width: 70px;
+    aspect-ratio: 1/1;
+  }
 }
 .main__feature-title {
   color: rgb(7, 196, 255);
-  size: 19px;
+  font-size: 19px;
+}
+@media screen and (min-width: 1440px) {
+  .main__feature-title {
+    font-size: 24px;
+  }
 }
 .main__feature-content {
   color: rgb(223, 240, 251);

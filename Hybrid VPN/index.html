@@ -9,14 +9,13 @@
 <body>
 <section class="section">
 <div class="conteiner"></div>
-<div class="divise"></div>
 <header class="header">
     <div class="header__right-part">
-        <img class="header__logo" src="../Hybrid VPN/assets/images/Logo.svg" width="100px" height=auto alt="looking">
+        <img class="header__logo" src="./assets/images/Logo.svg" width="100px" height=auto alt="looking">
         <h1 class="header__title">Hybrid VPN</h1>
     </div>
     <svg class="icon header__icon-menu">
-        <use xlink:href="sprite.svg#Menu"></use>
+        <use xlink:href="/assets/images/icons/sprite.svg#Menu"></use>
     </svg>
     <nav class="header__nav">
         <ul class="header__nav-list">
@@ -28,24 +27,33 @@
 </header>
 <main class="main">
     <div class="main__content">
-        <h2 class="main__title">Free Fast Secure</h2>
+        <h2 class="main__title">Free<br>Fast<br>Secure</h2>
         <h3 class="main__subtitle">VPN for<br>&nbsp;your device</h3>
-     <div class="main__icon-google-box">
-        <img class="main__icon-google" src="../Hybrid VPN/assets/images/Button Get App.svg" alt="looking">
-    </div>
+    <div class="main__google-conteiner">
+    
+        <img class="main__icon-google" src="/assets/images/Button Get App.svg" alt="looking">
+   
         <section class="main__ip">
             <p class="main__ip-text">Your IP address</p>
             <div class="main__ip-input-wrapper">
-                <span class="main__ip-icon-wrapper">🔍</span>
+                <div class="main__ip-icon-wrapper">
+                    <svg class="icon">
+                          <use xlink:href="./assets/images/icons/sprite.svg#Icon"></use>
+                        </svg>
+                     </div>
                 <p class="main__wrapper-text">78.128.158.180</p>    
             </div>
             <p class="main__ip-text">is not anonymous and it is visible to everyone</p>
             <p class="main__ip-text">Install Hybrid VPN to hide your location, encrypt your traffic, and make you anonymous</p>
         </section>
+    </div>
         <section class="main__features">
             <div class="main__feature">
                 <div class="main__feature-title-box">
-                <span class="main__feature-icon">C</span>
+                
+                <svg class="icon main__feature-icon">
+                    <use xlink:href="./assets/images/icons/sprite.svg#Icon-2"></use>
+                 </svg>
                 <p class="main__feature-title">The Connection is <br> Secure & Anonymous</p>
                 </div>
                 <p class="main__feature-content">Experience ultimate online freedom with our VPN app - your gateway to a secure and anonymous internet. <br>
@@ -53,7 +61,9 @@
             </div>
             <div class="main__feature">
              <div class="main__feature-title-box">
-                <span class="main__feature-icon">B</span>
+                <svg class="icon main__feature-icon">
+                    <use xlink:href="./assets/images/icons/sprite.svg#Icon-3"></use>
+                 </svg>
                 <p class="main__feature-title">Blazing Fast <br> Speeds</p>
             </div>
                 <p class="main__feature-content">Bypass restrictions and access geo-blocked content with ease, all while enjoying blazing-fast speeds. <br>
@@ -61,7 +71,9 @@
             </div>
             <div class="main__feature">
                 <div class="main__feature-title-box">
-                <span class="main__feature-icon">S</span>
+                    <svg class="icon main__feature-icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#Icon-4"></use>
+                     </svg>
                 <p class="main__feature-title">Servers All Over <br>the World</p>
                 </div>
                 <p class="main__feature-content">With servers strategically positioned across the globe, our VPN ensures you always have optimal speed and reliability. Connect effortlessly to servers in diverse locations, expanding your online horizons while maintaining the highest standards of security and anonymity.</p>
