@@ -7,6 +7,15 @@
 <title>Hybrid VPN</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 200, 
+            offset: 20, 
+        });
+    </script>
+    
+    
 <section class="section">
 <div class="conteiner"></div>
 <header class="header">
@@ -19,9 +28,9 @@
     </svg>
     <nav class="header__nav">
         <ul class="header__nav-list">
-            <li><a class="header__nav-link" href="#">How it works</a></li>
-            <li><a class="header__nav-link" href="#">Terms</a></li>
-            <li><a class="header__nav-link" href="#">Privacy</a></li>
+            <li><a class="header__nav-link" href="#how-it-works">How it works</a></li>
+            <li><a class="header__nav-link" href="#terms">Terms</a></li>
+            <li><a class="header__nav-link" href="#privacy">Privacy</a></li>
         </ul>
     </nav>
 </header>
@@ -80,7 +89,50 @@
             </div>
         </section>
     </div>
+    
 </main>
+<div class="second-part-img"></div>
+    <div class="main__second-part">
+        <div class="main__flex">
+        <h1 id="how-it-works" class="main__second-part-title">How it Works</h1>
+        </div>
+        <div class="main__second-part-block">
+            <h2 class="main__second-part-block-title">The Fast, Safe & Secure VPN for your device</h2>
+            <p class="main__second-part-block-text">Hybrid VPN is based on the latest VPN technology which is faster, safer and just better in every possible way. And, Hybrid VPN is really free. You pay nothing ever.
+                Unlike other "free VPN" apps, we do not make you watch ads.</p>
+        </div>
+        <div class="main__second-part-block">
+            <h2 class="main__second-part-block-title">️Instant Connection</h2>
+            <p class="main__second-part-block-text">Forget those"Connecting..."spinners. Hybrid VPN turns on in a blink of an eye.</p>
+        </div>
+        <div class="main__second-part-block">
+            <h2 class="main__second-part-block-title">Servers All Over The World</h2>
+            <p class="main__second-part-block-text">We have secure servers located on all sides of the planet. Our technology allows us to push updates to the server list very quickly if a server is blocked by local authorities or goes down. Also, switching from one server to another is super-fast.</p>
+        </div>
+        <div class="main__second-part-block">
+            <h2 class="main__second-part-block-title">Blazing Fast Speeds</h2>
+            <p class="main__second-part-block-text">Hybrid VPN protocol has a much lower overhead and a fast carrier layer - it uses less data and transmits it much faster.</p>
+        </div>
+        <div class="main__second-part-block">
+            <h2 class="main__second-part-block-title">Sharing the Network</h2>
+            <p class="main__second-part-block-text">While Hybrid VPN is installed on your device, we may transport other customers' traffic through it. For details, refer to our <a href="#" style="color: skyblue;"> Terms and Conditions</a></p>
+        </div>
+
+    </div>
+    <section class="main__third-part">
+        <div class="main__third-part-icon-border">
+            <svg class="icon main__third-part-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#lucide_mail"></use>
+             </svg>
+        </div>
+         <p>Any suggestions? Write to us</p>
+    </section>
+    <footer class="footer">
+        <p id="terms">By using the app, you agree to our <br>
+            <a id="privacy" href="#" style="color: skyblue;">Terms </a>& <a href="#" style="color: skyblue;">Privacy Policy</a></p>
+        <p>© Hybrid VPN</p>
+
+    </footer>
 </section>
 </body>
 </html>

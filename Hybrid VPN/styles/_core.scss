@@ -1,6 +1,9 @@
 @import './variables';
 @import './typography';
 @import './mixins';
+html {
+   scroll-behavior: smooth;
+}
 .section {
    background-color: #031C3C; 
    position: relative;
@@ -37,6 +40,26 @@
         width: 2200px;
          
       }
+        }
+        .second-part-img{
+         background-image: url(/assets/images/How-it-works-s.png);
+         overflow: hidden;
+         background-size:contain;
+         background-repeat:no-repeat; 
+         position: absolute; 
+         width: 100%;
+         // max-height: 1407px;
+         aspect-ratio: 375 / 1407;
+         z-index: -2;
+         @media screen and (min-width: 768px) {
+            background-image: url(/assets/images/How-it-works-m.png);
+            
+        }
+        @media screen and (min-width: 1440px) {
+         background-image: url(/assets/images/How-it-works-l.png);
+         
+     }
+       
         }
       
 

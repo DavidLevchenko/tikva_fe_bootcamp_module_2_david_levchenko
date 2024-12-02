@@ -138,6 +138,7 @@
         flex-direction: column;
         gap: 40px;
         font-family: $font-roboto;
+        margin-bottom: 70px;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
@@ -145,6 +146,7 @@
         @media screen and (min-width: 1440px) {
             gap: 140px;
         }
+
     
     }
    
@@ -193,4 +195,119 @@
         line-height: 24px;
         text-align: left;
     }
+
+    &__second-part{
+        margin-top: 300px;
+        font-family: $font-roboto;
+        color: rgba(2, 28, 60, 1);
+        position: relative;
+        margin: 300px 20px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin: 300px 20px 0;
+            
+        }
+        @media screen and (min-width: 1440px) {
+            margin: 300px 60px 200px;
+            
+        }
+       
+
+    }
+    &__second-part-title{
+        font-size: 40px;
+        margin-bottom: 40px;
+        @media screen and (min-width: 768px) {
+            font-size: 62px;
+            
+        }
+        @media screen and (min-width: 1440px) {
+            font-size: 62px;}
+            
+    }
+    &__second-part-block{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 29px;
+        @media screen and (min-width: 768px) {
+            width: 60%;
+            
+        }
+        @media screen and (min-width: 1440px) {
+            width: 60%;
+            
+        }
+       
+
+    }
+    &__second-part-block-title{
+        font-size: 24px;
+        
+
+    }
+    &__second-part-block-text{
+        font-size: 15px;
+
+    }
+    &__third-part{
+        background-color:rgba(0, 35, 76, 1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        height: 160px;
+        p {
+            color: rgba(7, 196, 255, 1);
+            size: 15px;
+        }
+       
+
+    }
+    &__third-part-icon-border{
+        width: 44px; 
+        height: 44px;
+        background-color:rgba(7, 196, 255, 1);
+        border-radius: 50%; 
+        position: relative;
+    }
+    &__third-part-icon{
+        position: absolute;
+        width: 24px;
+        aspect-ratio: 24 / 24;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__flex{
+        @media screen and (min-width: 768px) {
+            width: 60%;
+            
+        }
+        @media screen and (min-width: 1440px) {
+            width: 60%;
+              }
+
+    }
+  
+}
+.footer{
+    background-color: #031C3C; 
+    font-family: $font-roboto;
+    font-size: 15px;
+    width: 100%;
+    height: 159px;
+    color:rgba(100, 155, 205, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+
 }
