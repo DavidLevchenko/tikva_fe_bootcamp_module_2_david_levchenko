@@ -1,0 +1,146 @@
+@import './variables';
+
+
+//commited by Liubomyr
+.common-wrapper-header{
+    font-size: 18px;
+    width: 100%;
+    padding: 0 15px;
+    //rulles for mobile
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-left: 0;
+    align-items: center; 
+    @media screen and (min-width: 768px){
+       
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction:row;
+      
+    }
+    @media screen and  (min-width: 1440){
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    margin-left: 0;
+    justify-content:space-between;
+    align-items:center; 
+   
+
+    @media screen and (min-width: 768px) {
+        
+    
+        
+        padding-left: 0; 
+        margin-left: 0; 
+    }
+
+    @media screen and  (min-width: 1440){
+        // rulles for desktop
+        display: flex;
+        flex-direction: column; 
+        padding-left: 10px; 
+        margin-left: 0;
+        align-items: flex-start; 
+    }    
+    
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center; 
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 15px;
+       
+       
+    }
+
+    &__navigation {
+        display: none;
+        
+        @media screen and (min-width: 768px) {
+            display: block;
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+        
+
+        @media screen and  (min-width: 1440) {
+        display: block;
+        display: flex;
+        gap: 6px;
+        font-size: $main_font_family;
+        font-weight: 400;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 0;
+        }
+    }
+
+    &__link {
+        color: $black;
+        margin-bottom: 0;
+        &:hover {
+            color: $color_link_active;
+        }
+
+    }
+&__border-header{
+    display: none;
+    @media screen and (min-width: 768px){
+        display: block;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 1px;}
+    @media screen and (min-width: 1440px){
+        display: block;
+        border-top: 2px solid black;
+        width: 100%;
+        height: 1px;}
+}
+    &__logo {
+        width: 47px; 
+        height: 47px;
+        margin-top: 10px;
+         @media screen and (min-width: 768px) {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            
+        }
+
+        @media screen and (min-width: 1440px){
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+    }
+    
+}
+.icon-menu {
+    font-size: 30px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    @media screen and (min-width: 1440px){
+       display: none;
+    }}
